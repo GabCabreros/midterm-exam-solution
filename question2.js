@@ -1,5 +1,8 @@
-function countProperties(obj) {
-    return Object.keys(obj).length;
-    }
-    
-    console.log(countProperties({ a: 1, b: 2, c: 3 }));
+function delayedGreeting(name) {
+    setTimeout(function() {
+        console.log(`Hello, ${name}!`);
+    }, 2000); 
+}
+
+// Example usage:
+delayedGreeting("Godwin"); // Logs "Hello, Alice!" after 2 seconds
